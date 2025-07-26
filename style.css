@@ -104,6 +104,7 @@ video{
     font-size: 15px;
     font-weight: 500;
     width: 40%;
+    display: block;
 }
 #page1 a{
     position: absolute;
@@ -201,6 +202,10 @@ footer {
     color: #000000;
 } 
 
+.carousel-inner .card  img{
+    width: 50px;
+    margin-left: 20px;
+} 
 
 
 .checked {
@@ -211,3 +216,16 @@ footer {
 .unchecked {
     color: rgb(0, 0, 0);
   }
+
+
+
+@media (max-width: 600px) {
+  #page1 p {
+    display: none; /* text गायब */
+  }
+
+  #page1 a {
+    margin-top: 80vh; /* button नीचे जाएगा */
+  }
+}
+  
